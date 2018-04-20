@@ -8,7 +8,7 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new(review_params)
     if @review.save
-      redirect_to product_path(@review.list)
+      redirect_to product_path(@review.product)
     else
       render :new
     end
@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     @product = Product.find(params[:id])
     @review.destroy
-    redirect_to product_path(@product)
+    redirect_to product_path(@review.product)
   end
 
 private
