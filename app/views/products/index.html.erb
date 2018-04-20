@@ -8,4 +8,32 @@
 
 <hr>
 
+<h1>Most reviewed</h1>
+  <ul>
+    <% @products.most_reviews.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+
+<hr>
+
+<h1>Recently added</h1>
+  <ul>
+    <% @products.three_most_recent.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+
+<hr>
+
+<h1>Made in USA</h1>
+  <ul>
+    <% @products.made_in_usa.each do |product| %>
+      <li><%= link_to product.name, product_path(product) %></li>
+    <% end %>
+  </ul>
+
+<hr>
+
+
 <%= link_to "New Product", new_product_path %>
