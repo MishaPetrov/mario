@@ -11,7 +11,7 @@ describe "the add a review process" do
     click_link 'Mango'
     click_link 'Add a review'
     fill_in 'review_author', :with => 'Admin'
-    fill_in 'review_content_body', :with => 'Delicious!'
+    fill_in 'review_content_body', :with => 'Delicious! Such a good juicy and fresh fruit! Really recommend to everyone who likes exotic fruit!'
     select "5", :from => "review_rating"
     click_on 'Create Review'
     expect(page).to have_content 'Delicious!'
@@ -40,7 +40,7 @@ describe "the add a review process" do
     click_link 'Mango'
     click_link 'Add a review'
     fill_in 'review_author', :with => 'Admin'
-    fill_in 'review_content_body', :with => 'Delicious!'
+    fill_in 'review_content_body', :with => 'Delicious! Such a good juicy and fresh fruit! Really recommend to everyone who likes exotic fruit!'
     click_on 'Create Review'
     expect(page).to have_content 'errors'
   end
