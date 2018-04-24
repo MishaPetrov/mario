@@ -6,6 +6,8 @@
 
 ![view 1](https://i.imgur.com/K4JZpiS.png)
 
+![view 2](https://i.imgur.com/3Rl1phM.png)
+
 ## Setup/Installation Requirements
 
 #### To deploy on local machine: 
@@ -25,12 +27,9 @@
 * Site admins can add, update and delete new products.
 * Users can click an individual product to see its detail page
 * Users are able to add a review to a product.
-
-
-## PLANS TO ADD
-
-* User can delete/edit polls
-* User can follow other users and only see their polls in her feed
+* Site filters and displays products with the most reviews.
+* Site filters and displays three most recently added products.
+* Site filters and displays all products made in the USA for buyers that want to buy local products.
 
 ## Support and contact details
 
@@ -39,10 +38,6 @@ _modesau@gmail.com_
 ## Technologies Used
 
 Ruby, Rails, psql, HTML, SASS, Materialize
-
-
-![view 2](https://i.imgur.com/3Rl1phM.png)
-
 
 ### License
 
