@@ -4,9 +4,6 @@
 
 #### By _**Misha Petrov**_
 
-![view 1](https://i.imgur.com/K4JZpiS.png)
-
-![view 2](https://i.imgur.com/3Rl1phM.png)
 
 ## Setup/Installation Requirements
 
@@ -38,6 +35,12 @@ _modesau@gmail.com_
 ## Technologies Used
 
 Ruby, Rails, psql, HTML, SASS, Materialize
+
+## Screenshots
+
+![view 1](https://i.imgur.com/K4JZpiS.png)
+
+![view 2](https://i.imgur.com/3Rl1phM.png)
 
 ### License
 
