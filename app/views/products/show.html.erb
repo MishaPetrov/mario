@@ -1,14 +1,15 @@
 <h1><%= @product.name %></h1>
-
+<h5>| <%= @product.country %> | $<%= @product.cost %></h5>
 <% if @product.reviews.any? %>
-  <h4>Here are the reviews for this product:</h4>
+  <h4>Reviews:</h4>
 
-  <ul>
+  <ul class="collection">
     <% @product.reviews.each do |review| %>
-      <li>
-        <%= review.author %> |
-        <%= review.content_body %> |
-        <%= review.rating %> |
+      <li class="collection-item avatar">
+        <i class="material-icons circle">rate_review</i>
+        <span class="title"><b><%= review.author %></b></span>
+        <p><%= review.content_body %></p>
+        <span class="secondary-content"><%= review.rating %> / 5</span>
         <%= link_to "Delete review", product_review_path(@product, review),
                                  :data => {:confirm => "Are you sure?",
                                                 :method => "delete"} %>
