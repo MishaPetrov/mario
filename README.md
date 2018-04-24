@@ -1,24 +1,49 @@
-# README
+# Mario's Produce 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Online catalog of products for a local produce store
 
-Things you may want to cover:
+#### By _**Misha Petrov**_
 
-* Ruby version
 
-* System dependencies
+## Setup/Installation Requirements
 
-* Configuration
+#### To deploy on local machine: 
 
-* Database creation
+* Clone the repository to your local computer.
+* In terminal, navigate to the project's directory
+* In terminal, execute _`$ bundle install`_
+* In terminal, execute _`$ rake db:create`_ to create a database
+* In terminal, execute _`$ rake db:test:prepare`_ to create a test database
+* In terminal, execute _`$ rake db:migrate`_ to create necessary tables in DB
+* In terminal, execute _`$ rake db:seed`_ to fill the database with demo content
+* In terminal, type _`$ rails s`_ to build an app on a local computer
+* In browser, navigate to localhost:3000/
 
-* Database initialization
+## Specifications (use case scenarios)
 
-* How to run the test suite
+* Site admins can add, update and delete new products.
+* Users can click an individual product to see its detail page
+* Users are able to add a review to a product.
+* Site filters and displays products with the most reviews.
+* Site filters and displays three most recently added products.
+* Site filters and displays all products made in the USA for buyers that want to buy local products.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_modesau@gmail.com_
 
-* ...
+## Technologies Used
+
+Ruby, Rails, psql, HTML, SASS, Materialize
+
+## Screenshots
+
+![view 1](https://i.imgur.com/K4JZpiS.png)
+
+![view 2](https://i.imgur.com/3Rl1phM.png)
+
+### License
+
+*Licensed under MIT license*
+
+Copyright (c) 2018 **_Misha Petrov_**
