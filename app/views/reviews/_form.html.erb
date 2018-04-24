@@ -6,6 +6,6 @@
   <%= f.label :review %>
   <%= f.text_field :content_body %>
   <%= f.label :rating %>
-  <%= f.select :rating, [ '1', '2', '3', '4', '5' ], :prompt => 'Select Rating' %>
+  <%= f.range_field(:rating, in: 1..5) %>
   <p><%= f.submit %></p>
 <% end %>
